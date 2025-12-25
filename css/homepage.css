@@ -1,0 +1,116 @@
+/* Homepage styles */
+
+header {
+    text-align: center;
+    margin-bottom: 80px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+header h1 {
+    font-size: 56px;
+    color: #2a2a2a;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+
+.batches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.batch-card {
+    background: white;
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.batch-card:nth-child(1) { animation-delay: 0.1s; }
+.batch-card:nth-child(2) { animation-delay: 0.2s; }
+.batch-card:nth-child(3) { animation-delay: 0.3s; }
+
+.batch-card:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.batch-thumbnail {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #e8dfd5 0%, #d9cfc5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.batch-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.batch-info {
+    padding: 28px;
+}
+
+.batch-date {
+    font-family: 'Crimson Text', serif;
+    font-size: 28px;
+    color: #2a2a2a;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.batch-count {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 12px;
+}
+
+.batch-description {
+    font-size: 15px;
+    color: #6b6b6b;
+    line-height: 1.5;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 80px 40px;
+    color: #999;
+}
+
+.empty-state-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .batches-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

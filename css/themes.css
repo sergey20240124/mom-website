@@ -1,0 +1,281 @@
+/* Event/Holiday Themes - Import one of these alongside base.css to apply special styling */
+
+/* Default theme (warm neutral) - included in base styles */
+
+/* ===== CHRISTMAS THEME ===== */
+body.theme-christmas {
+    background: linear-gradient(135deg, #0f472b 0%, #1a5c3a 100%);
+}
+
+body.theme-christmas .divider {
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+body.theme-christmas h1 {
+    color: #fff;
+}
+
+body.theme-christmas .subtitle,
+body.theme-christmas .batch-meta {
+    color: #e8d4a8;
+}
+
+body.theme-christmas .batch-card {
+    background: #1a5c3a;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.theme-christmas .batch-date {
+    color: #ffd700;
+}
+
+body.theme-christmas .batch-count,
+body.theme-christmas .batch-description {
+    color: #d4af37;
+}
+
+body.theme-christmas .nav-bar {
+    background: #0f472b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.theme-christmas .nav-home {
+    color: #ffd700;
+}
+
+body.theme-christmas .nav-home:hover {
+    color: #fff;
+}
+
+body.theme-christmas .nav-link {
+    background: #1a5c3a;
+    border-color: #2d7a52;
+    color: #d4af37;
+}
+
+body.theme-christmas .nav-link:hover {
+    background: #2d7a52;
+    color: #ffd700;
+}
+
+body.theme-christmas .nav-link.active {
+    background: #d4af37;
+    color: #0f472b;
+    border-color: #d4af37;
+}
+
+body.theme-christmas .gallery-item {
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+}
+
+body.theme-christmas .gallery-item:hover {
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.3);
+}
+
+/* ===== BIRTHDAY THEME ===== */
+body.theme-birthday {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe6f0 100%);
+}
+
+body.theme-birthday .divider {
+    background: linear-gradient(90deg, transparent, #ff69b4, transparent);
+}
+
+body.theme-birthday h1 {
+    color: #d946a6;
+    font-size: 64px;
+}
+
+body.theme-birthday .subtitle,
+body.theme-birthday .batch-meta {
+    color: #ec4899;
+    font-weight: 500;
+}
+
+body.theme-birthday .batch-card {
+    background: white;
+    border: 2px solid #fbbf24;
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+}
+
+body.theme-birthday .batch-card:hover {
+    box-shadow: 0 12px 28px rgba(251, 191, 36, 0.4);
+    border-color: #f59e0b;
+}
+
+body.theme-birthday .batch-date {
+    color: #d946a6;
+    font-size: 32px;
+}
+
+body.theme-birthday .batch-count {
+    color: #ec4899;
+    font-weight: 500;
+}
+
+body.theme-birthday .batch-description {
+    color: #be185d;
+}
+
+body.theme-birthday .nav-bar {
+    background: white;
+    border-bottom: 3px solid #fbbf24;
+}
+
+body.theme-birthday .nav-home {
+    color: #d946a6;
+    font-size: 28px;
+}
+
+body.theme-birthday .nav-home:hover {
+    color: #ec4899;
+}
+
+body.theme-birthday .nav-link {
+    background: #fff5e6;
+    border-color: #fbbf24;
+    color: #d946a6;
+    font-weight: 500;
+}
+
+body.theme-birthday .nav-link:hover {
+    background: #fbbf24;
+    color: #d946a6;
+}
+
+body.theme-birthday .nav-link.active {
+    background: #fbbf24;
+    color: #fff;
+    border-color: #fbbf24;
+}
+
+body.theme-birthday .gallery-item {
+    border: 2px solid #fbbf24;
+}
+
+body.theme-birthday .gallery-item:hover {
+    border-color: #f59e0b;
+}
+
+/* ===== NEW YEAR THEME ===== */
+body.theme-newyear {
+    background: linear-gradient(135deg, #001f3f 0%, #003d7a 100%);
+}
+
+body.theme-newyear .divider {
+    background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+}
+
+body.theme-newyear h1 {
+    color: #00d4ff;
+    font-size: 64px;
+}
+
+body.theme-newyear .subtitle,
+body.theme-newyear .batch-meta {
+    color: #b3e5ff;
+    font-weight: 500;
+}
+
+body.theme-newyear .batch-card {
+    background: #001f3f;
+    color: #fff;
+    border: 1px solid #00d4ff;
+}
+
+body.theme-newyear .batch-card:hover {
+    border-color: #00f7ff;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+body.theme-newyear .batch-date {
+    color: #00d4ff;
+}
+
+body.theme-newyear .batch-count,
+body.theme-newyear .batch-description {
+    color: #b3e5ff;
+}
+
+body.theme-newyear .nav-bar {
+    background: #001f3f;
+    border-bottom: 2px solid #00d4ff;
+}
+
+body.theme-newyear .nav-home {
+    color: #00d4ff;
+}
+
+body.theme-newyear .nav-link {
+    background: #003d7a;
+    border-color: #00d4ff;
+    color: #b3e5ff;
+}
+
+body.theme-newyear .nav-link:hover {
+    background: #005fa3;
+    border-color: #00f7ff;
+    color: #00d4ff;
+}
+
+body.theme-newyear .nav-link.active {
+    background: #00d4ff;
+    color: #001f3f;
+    border-color: #00d4ff;
+}
+
+/* ===== SUMMER THEME ===== */
+body.theme-summer {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+}
+
+body.theme-summer .divider {
+    background: linear-gradient(90deg, transparent, #f97316, transparent);
+}
+
+body.theme-summer h1 {
+    color: #ea580c;
+}
+
+body.theme-summer .subtitle,
+body.theme-summer .batch-meta {
+    color: #c2410c;
+}
+
+body.theme-summer .batch-card {
+    background: white;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.15);
+}
+
+body.theme-summer .batch-card:hover {
+    box-shadow: 0 12px 28px rgba(249, 115, 22, 0.25);
+}
+
+body.theme-summer .batch-date {
+    color: #ea580c;
+}
+
+body.theme-summer .batch-count,
+body.theme-summer .batch-description {
+    color: #c2410c;
+}
+
+body.theme-summer .nav-bar {
+    background: white;
+    border-bottom: 3px solid #f97316;
+}
+
+body.theme-summer .nav-home {
+    color: #ea580c;
+}
+
+body.theme-summer .nav-home:hover {
+    color: #c2410c;
+}
+
+body.theme-summer .nav-link.active {
+    background: #f97316;
+    color: white;
+    border-color: #f97316;
+}

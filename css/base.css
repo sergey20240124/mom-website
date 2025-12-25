@@ -1,0 +1,75 @@
+/* Base styles - used across all pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: linear-gradient(135deg, #faf8f3 0%, #f5f1eb 100%);
+    color: #3a3a3a;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Utility classes */
+.divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #c9a876, transparent);
+    margin: 24px auto;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 24px;
+    }
+}
