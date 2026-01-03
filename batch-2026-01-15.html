@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan 15 - Espoo Chronicle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/batch.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-home">Espoo Chronicle</a>
+            <div class="nav-links">
+                <a href="batch-2026-01-15.html" class="nav-link active">Jan 15</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>January 15, 2026</h1>
+            <div class="divider"></div>
+            <!-- <p class="batch-meta">Add note here</p> -->
+        </header>
+
+        <div class="batch-preview-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="20260115/1000022081.jpg" alt="Family moment 1" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <video style="width: 300px; height: 400px; object-fit: cover;">
+                    <source src="20260115/1000022002.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content" id="lightboxContent" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        </div>
+    </div>
+
+    <script>
+        const items = [            { type: 'img', src: '20260115/1000022081.jpg', alt: 'Family moment 1' },            { type: 'video', src: '20260115/1000022002.mp4', alt: 'Family video 2' }];
+
+
+
+        function openLightbox(index) {
+            const lightbox = document.getElementById('lightbox');
+            const content = document.getElementById('lightboxContent');
+            const item = items[index];
+
+            let html = '<span class="lightbox-close" onclick="closeLightbox()">&times;</span>';
+            
+            if (item.type === 'img') {
+                html += `<img src="${item.src}" alt="${item.alt}" style="max-width: 600px; max-height: 800px; object-fit: contain;">`;
+            } else if (item.type === 'video') {
+                html += `<video controls autoplay style="max-width: 600px; max-height: 800px; object-fit: contain;"><source src="${item.src}" type="video/mp4"></video>`;
+            }
+
+            content.innerHTML = html;
+            lightbox.classList.add('active');
+            console.log('Lightbox opened for item:', index);
+        }
+
+        function closeLightbox(event) {
+            if (event && event.target && event.target.id !== 'lightbox') return;
+            document.getElementById('lightbox').classList.remove('active');
+            console.log('Lightbox closed');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
