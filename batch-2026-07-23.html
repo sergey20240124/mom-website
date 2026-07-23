@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jul 23 - Espoo Chronicle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/batch.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-home">Espoo Chronicle</a>
+            <div class="nav-links">
+                <a href="batch-2026-07-23.html" class="nav-link active">Jul 23</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>July 23, 2026</h1>
+            <div class="divider"></div>
+        </header>
+
+        <div class="batch-preview-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="20260723/tg_7463049252_444.jpg" alt="Family moment 1" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="20260723/tg_7463049252_445.jpg" alt="Family moment 2" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="20260723/tg_7463049252_446.jpg" alt="Family moment 3" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="20260723/tg_7463049252_447.jpg" alt="Family moment 4" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="20260723/tg_7463049252_448.jpg" alt="Family moment 5" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(5)">
+                <img src="20260723/tg_7463049252_449.jpg" alt="Family moment 6" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(6)">
+                <img src="20260723/tg_7463049252_450.jpg" alt="Family moment 7" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(7)">
+                <img src="20260723/tg_7463049252_451.jpg" alt="Family moment 8" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(8)">
+                <img src="20260723/tg_7463049252_452.jpg" alt="Family moment 9" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(9)">
+                <img src="20260723/tg_7463049252_453.jpg" alt="Family moment 10" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(10)">
+                <img src="20260723/tg_7463049252_454.jpg" alt="Family moment 11" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(11)">
+                <img src="20260723/tg_7463049252_455.jpg" alt="Family moment 12" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(12)">
+                <img src="20260723/tg_7463049252_456.jpg" alt="Family moment 13" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(13)">
+                <video style="width: 300px; height: 400px; object-fit: cover;">
+                    <source src="20260723/tg_7463049252_457.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(14)">
+                <img src="20260723/tg_7463049252_458.jpg" alt="Family moment 15" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(15)">
+                <img src="20260723/tg_7463049252_459.jpg" alt="Family moment 16" style="width: 300px; height: 400px; object-fit: cover;">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(16)">
+                <video style="width: 300px; height: 400px; object-fit: cover;">
+                    <source src="20260723/tg_7463049252_460.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content" id="lightboxContent" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        </div>
+    </div>
+
+    <script>
+        const items = [            { type: 'img', src: '20260723/tg_7463049252_444.jpg', alt: 'Family moment 1' },            { type: 'img', src: '20260723/tg_7463049252_445.jpg', alt: 'Family moment 2' },            { type: 'img', src: '20260723/tg_7463049252_446.jpg', alt: 'Family moment 3' },            { type: 'img', src: '20260723/tg_7463049252_447.jpg', alt: 'Family moment 4' },            { type: 'img', src: '20260723/tg_7463049252_448.jpg', alt: 'Family moment 5' },            { type: 'img', src: '20260723/tg_7463049252_449.jpg', alt: 'Family moment 6' },            { type: 'img', src: '20260723/tg_7463049252_450.jpg', alt: 'Family moment 7' },            { type: 'img', src: '20260723/tg_7463049252_451.jpg', alt: 'Family moment 8' },            { type: 'img', src: '20260723/tg_7463049252_452.jpg', alt: 'Family moment 9' },            { type: 'img', src: '20260723/tg_7463049252_453.jpg', alt: 'Family moment 10' },            { type: 'img', src: '20260723/tg_7463049252_454.jpg', alt: 'Family moment 11' },            { type: 'img', src: '20260723/tg_7463049252_455.jpg', alt: 'Family moment 12' },            { type: 'img', src: '20260723/tg_7463049252_456.jpg', alt: 'Family moment 13' },            { type: 'video', src: '20260723/tg_7463049252_457.mp4', alt: 'Family video 14' },            { type: 'img', src: '20260723/tg_7463049252_458.jpg', alt: 'Family moment 15' },            { type: 'img', src: '20260723/tg_7463049252_459.jpg', alt: 'Family moment 16' },            { type: 'video', src: '20260723/tg_7463049252_460.mp4', alt: 'Family video 17' }];
+
+        function openLightbox(index) {
+            const lightbox = document.getElementById('lightbox');
+            const content = document.getElementById('lightboxContent');
+            const item = items[index];
+            let html = '<span class="lightbox-close" onclick="closeLightbox()">&times;</span>';
+            if (item.type === 'img') {
+                html += `<img src="${item.src}" alt="${item.alt}" style="max-width: 600px; max-height: 800px; object-fit: contain;">`;
+            } else if (item.type === 'video') {
+                html += `<video controls autoplay style="max-width: 600px; max-height: 800px; object-fit: contain;"><source src="${item.src}" type="video/mp4"></video>`;
+            }
+            content.innerHTML = html;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox(event) {
+            if (event && event.target && event.target.id !== 'lightbox') return;
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
